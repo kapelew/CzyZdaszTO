@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE; -fx-border-radius: 16px; -fx-background-radius: 16px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.czyzdaszto.ResultController">
+   <children>
+      <Label layoutX="249.0" layoutY="14.0" prefHeight="53.0" prefWidth="130.0" text="Wynik" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="remark" layoutX="20.0" layoutY="61.0" prefHeight="96.0" prefWidth="559.0" text="Dobra robota, jestes gotowy na odpowiedz ustna z przedmiotu Technologie Obiektowe!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="marks" layoutX="14.0" layoutY="157.0" style="-fx-background-color: skyblue; -fx-background-radius: 16px; -fx-border-radius: 16px;" text="4/5">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="48.0" left="45.0" right="45.0" top="48.0" />
+         </padding>
+      </Label>
+      <ProgressIndicator fx:id="correctProgress" layoutX="235.0" layoutY="156.0" minHeight="130.0" minWidth="130.0" progress="0.8" style="-fx-background-color: lightgreen; -fx-progress-color: green; -fx-font-weight: 90; -fx-font-size: 20; -fx-background-radius: 16px; -fx-border-radius: 16px; -fx-box-border: green;">
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </ProgressIndicator>
+      <ProgressIndicator fx:id="wrongProgress" layoutX="449.0" layoutY="156.0" minHeight="130.0" minWidth="130.0" progress="0.2" style="-fx-background-color: FFCDD2; -fx-progress-color: red; -fx-font-weight: 900; -fx-font-size: 20; -fx-background-radius: 16px; -fx-border-radius: 16px; -fx-box-border: red;">
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </ProgressIndicator>
+      <Label fx:id="marksText" layoutX="16.0" layoutY="286.0" prefHeight="53.0" prefWidth="130.0" text="4 punkty zdobyte" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="correctAnswers" layoutX="235.0" layoutY="286.0" prefHeight="53.0" prefWidth="130.0" text="Poprawnych odpowiedzi:8" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="wrongAnswers" layoutX="449.0" layoutY="286.0" prefHeight="53.0" prefWidth="130.0" text="Blednych odpowiedzi:2" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="opt5" layoutX="556.0" layoutY="13.0" mnemonicParsing="false" onAction="#opt5Clicked" prefHeight="26.0" prefWidth="24.0" style="-fx-background-color: #DC493A; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="X" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="13.0" />
+         </font></Button>
+      <Button fx:id="opt6" layoutX="207.0" layoutY="351.0" mnemonicParsing="false" onAction="#opt6Clicked" prefHeight="27.0" prefWidth="186.0" style="-fx-background-color: #4392F1; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="SPROBUJ JESZCZE RAZ" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="13.0" />
+         </font></Button>   <Button fx:id="opt5" layoutX="556.0" layoutY="13.0" mnemonicParsing="false" onAction="#opt5Clicked" prefHeight="26.0" prefWidth="24.0" style="-fx-background-color: red; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="X" textFill="WHITE" />
+   </children>
+</AnchorPane>

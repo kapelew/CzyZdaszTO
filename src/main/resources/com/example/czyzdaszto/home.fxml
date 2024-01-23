@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600" style="-fx-background-color: WHITE; -fx-border-radius: 16px; -fx-background-radius: 16px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.czyzdaszto.HomeController">
+   <children>
+      <Label alignment="CENTER" layoutY="106.0" prefHeight="66.0" prefWidth="600.0" style="-fx-text-alignment: center;" text="Czy zdasz TO?">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="49.0" />
+         </font>
+      </Label>
+      <Button fx:id="playQuizButton" layoutX="181.0" layoutY="203.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="240.0" style="-fx-background-color: #527853; -fx-background-radius: 16px; -fx-border-radius: 16px;" text="SPROBUJE" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="20.0" />
+         </font></Button>
+      <Button fx:id="opt5" layoutX="256.0" layoutY="259.0" mnemonicParsing="false" onAction="#opt5Clicked" prefHeight="27.0" prefWidth="91.0" style="-fx-background-color: #DC493A; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="NIE ZDAM" textFill="WHITE">
+         <font>
+            <Font name="JetBrains Mono ExtraBold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
